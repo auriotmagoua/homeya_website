@@ -24,6 +24,7 @@ export default function Testimonials (){
         'Mettre mon bien en location sur Homeya m\'a permis d\'entrer directement en contact avec des locataires sérieux sans perdre de temps ni passer par des intermédiaires douteux.',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
     },
+    
     {
       id: 2,
       name: 'Jessica T.',
