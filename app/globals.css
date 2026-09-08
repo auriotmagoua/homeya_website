@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* ── @reference permet d'utiliser @apply avec les utilitaires Tailwind v4 ── */
+@reference "tailwindcss";
+
+/* ── CSS Custom Properties ─────────────────────────────── */
+:root {
+  --homeya-orange: #F77500;
+  --homeya-blue: #123B70;
+  --homeya-blue-dark: #0A2244;
+  --homeya-bg-light: #F8FAFC;
+}
