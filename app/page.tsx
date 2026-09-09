@@ -1,7 +1,6 @@
 import Navbar from "../app/components/sections/Navbar";
 import Hero from "../app/components/sections/Hero";
 import Features from "../app/components/sections/Features";
-import HowItWorks from "../app/components/sections/HowItWorks";
 import Testimonials from "../app/components/sections/Testimonials";
 import CtaBanner from "../app/components/sections/CtaBanner";
 import Footer from "../app/components/sections/Footer";
