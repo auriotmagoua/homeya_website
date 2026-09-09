@@ -7,6 +7,12 @@ import Image from 'next/image';
 import { ArrowUp, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
 
   return (
     <footer className="bg-[#0A2244] text-white pt-16 pb-8 relative overflow-hidden">
@@ -35,7 +41,7 @@ export default function Footer() {
             <div className="space-y-2 pt-2 text-xs text-gray-300">
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4 text-[#F77500] flex-shrink-0" />
-                <span>Bafoussam,Douala & Yaoundé, Cameroun</span>
+                <span>Bafoussam, Douala & Yaoundé, Cameroun</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-[#F77500] flex-shrink-0" />
@@ -55,22 +61,22 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs text-gray-300">
               <li>
-                <Link href="#" className="hover:text-[#F77500] transition-colors">
+                <Link href="/cgu" className="hover:text-[#F77500] transition-colors">
                   Conditions Générales d&apos;Utilisation
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#F77500] transition-colors">
+                <Link href="/politique-de-confidentialite" className="hover:text-[#F77500] transition-colors">
                   Politique de Confidentialité
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#F77500] transition-colors">
+                <Link href="/mentions-legales" className="hover:text-[#F77500] transition-colors">
                   Mentions Légales
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#F77500] transition-colors">
+                <Link href="/cookies" className="hover:text-[#F77500] transition-colors">
                   Gestion des cookies
                 </Link>
               </li>
@@ -84,22 +90,22 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs text-gray-300">
               <li>
-                <Link href="#a-propos" className="hover:text-[#F77500] transition-colors">
+                <Link href="/#a-propos" className="hover:text-[#F77500] transition-colors">
                   À propos de nous
                 </Link>
               </li>
               <li>
-                <Link href="#fonctionnalites" className="hover:text-[#F77500] transition-colors">
+                <Link href="/#fonctionnalites" className="hover:text-[#F77500] transition-colors">
                   Fonctionnalités
                 </Link>
               </li>
               <li>
-                <Link href="#contacts" className="hover:text-[#F77500] transition-colors">
+                <Link href="/faq" className="hover:text-[#F77500] transition-colors">
                   Centre d&apos;aide & FAQ
                 </Link>
               </li>
               <li>
-                <Link href="#contacts" className="hover:text-[#F77500] transition-colors">
+                <Link href="/#contacts" className="hover:text-[#F77500] transition-colors">
                   Contactez-nous
                 </Link>
               </li>
@@ -117,21 +123,27 @@ export default function Footer() {
 
             <div className="flex space-x-3 pt-2">
               <a
-                href="#"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-8 h-8 rounded-lg bg-white/10 hover:bg-[#F77500] flex items-center justify-center text-white transition-all"
                 aria-label="Facebook"
               >
                 <span className="text-xs font-bold">fb</span>
               </a>
               <a
-                href="#"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-8 h-8 rounded-lg bg-white/10 hover:bg-[#F77500] flex items-center justify-center text-white transition-all"
                 aria-label="Instagram"
               >
                 <span className="text-xs font-bold">ig</span>
               </a>
               <a
-                href="#"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-8 h-8 rounded-lg bg-white/10 hover:bg-[#F77500] flex items-center justify-center text-white transition-all"
                 aria-label="LinkedIn"
               >
@@ -145,6 +157,16 @@ export default function Footer() {
         {/* Bas de page : Copyright + Bouton Scroll Top */}
         <div className="pt-8 flex flex-col text-center sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
           <p>© {new Date().getFullYear()} Homeya. Tous droits réservés.</p>
+
+          <button
+            onClick={scrollToTop}
+            className="inline-flex items-center space-x-2 text-xs font-semibold text-gray-300 hover:text-[#F77500] transition-colors"
+          >
+            <span>Haut de page</span>
+            <div className="p-1.5 rounded-full bg-white/10 hover:bg-[#F77500] text-white transition-all">
+              <ArrowUp className="w-3.5 h-3.5" />
+            </div>
+          </button>
         </div>
 
       </div>

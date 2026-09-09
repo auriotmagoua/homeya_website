@@ -80,15 +80,15 @@ export default function ContactForm() {
           </span>
 
           <h2 className="text-2xl font-extrabold tracking-tight text-[#123B70] sm:text-2xl lg:text-3xl">
-            Un projet immobilier ?
+            Votre projet immobilier
             <span className="block text-[#F77500]">
-              Parlons-en ensemble.
+              commence ici.
             </span>
           </h2>
 
           <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-gray-500 sm:text-base">
             Une question, un projet d&apos;achat, de location ou de vente ?
-            L&apos;équipe HomeYa est là pour vous accompagner.
+            L&apos;équipe HomeYa est à votre écoute pour vous accompagner.
           </p>
         </div>
 

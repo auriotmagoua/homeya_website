@@ -8,11 +8,11 @@ export default function DownloadBanner () {
   return (
     <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-6xl mx-auto bg-black rounded-3xl overflow-hidden relative shadow-2xl">
-        {/* Image de fond (Intérieur moderne) avec overlay sombre */}
+        {/* Image de fond (ajout du '/' au début du chemin) */}
         <div 
-          className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-overlay"
+          className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{
-            backgroundImage: `url('about.png')`
+            backgroundImage: `url('/about.png')`
           }}
         />
 
@@ -76,4 +76,4 @@ export default function DownloadBanner () {
       </div>
     </section>
   );
-};
+}
