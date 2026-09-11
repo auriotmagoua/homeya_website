@@ -36,32 +36,62 @@ export default function ContactForm() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+const handleSubmit = async (
+  e: React.FormEvent<HTMLFormElement>
+) => {
+  e.preventDefault();
+  e.stopPropagation();
 
-    setIsSending(true);
+  if (isSending) return;
 
-    // TODO: remplacer par ton appel API
+  setIsSending(true);
+  setIsSent(false);
+
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(
+        data.error || "Une erreur est survenue lors de l'envoi."
+      );
+    }
+
+    console.log("Message envoyé :", data);
+
+    setIsSent(true);
+
+    setFormData({
+      firstName: "",
+      lastName: "",
+      phone: "",
+      email: "",
+      message: "",
+    });
+
     setTimeout(() => {
-      console.log('Données soumises :', formData);
+      setIsSent(false);
+    }, 5000);
 
-      setIsSending(false);
-      setIsSent(true);
+  } catch (error) {
+    console.error("Erreur lors de l'envoi :", error);
 
-      setFormData({
-        firstName: '',
-        lastName: '',
-        phone: '',
-        email: '',
-        message: '',
-      });
-
-      setTimeout(() => {
-        setIsSent(false);
-      }, 5000);
-    }, 1000);
-  };
-
+    alert(
+      error instanceof Error
+        ? error.message
+        : "Impossible d'envoyer le message."
+    );
+  } finally {
+    setIsSending(false);
+  }
+};
   return (
     <section
       id="contacts"
@@ -253,7 +283,14 @@ export default function ContactForm() {
               </div>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-5">
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  handleSubmit(e);
+                }}
+                className="space-y-5"
+              >
               {/* Nom / Prénom */}
               <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                 {/* Nom */}
