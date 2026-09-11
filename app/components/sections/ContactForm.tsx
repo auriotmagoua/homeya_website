@@ -141,7 +141,7 @@ export default function ContactForm() {
                       Téléphone
                     </p>
                     <p className="mt-1 text-sm font-semibold">
-                      +237 6XX XX XX XX
+                      +237 699 128 531 / 698 204 806
                     </p>
                   </div>
                 </a>
@@ -160,7 +160,7 @@ export default function ContactForm() {
                       Email
                     </p>
                     <p className="mt-1 text-sm font-semibold">
-                      contact@homeya.cm
+                      contact@homeya.site
                     </p>
                   </div>
                 </a>
@@ -327,7 +327,7 @@ export default function ContactForm() {
                       type="tel"
                       required
                       autoComplete="tel"
-                      placeholder="+237 6XX XX XX XX"
+                      placeholder="+237 699128531"
                       value={formData.phone}
                       onChange={handleChange}
                       className="h-12 w-full rounded-xl border border-gray-200 bg-gray-50/70 pl-11 pr-4 text-sm text-gray-800 outline-none transition-all duration-200 placeholder:text-gray-400 hover:border-gray-300 focus:border-[#F77500] focus:bg-white focus:ring-4 focus:ring-[#F77500]/10"
@@ -357,7 +357,7 @@ export default function ContactForm() {
                       type="email"
                       required
                       autoComplete="email"
-                      placeholder="exemple@domaine.cm"
+                      placeholder="auriotmagoua@gmail.com"
                       value={formData.email}
                       onChange={handleChange}
                       className="h-12 w-full rounded-xl border border-gray-200 bg-gray-50/70 pl-11 pr-4 text-sm text-gray-800 outline-none transition-all duration-200 placeholder:text-gray-400 hover:border-gray-300 focus:border-[#F77500] focus:bg-white focus:ring-4 focus:ring-[#F77500]/10"

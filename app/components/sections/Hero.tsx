@@ -66,7 +66,7 @@ export default function Hero() {
 
             <div className="text-left">
               <div className="text-[9px] font-medium uppercase tracking-wider text-gray-400">
-                Télécharger dans l&apos;
+                Télécharger
               </div>
               <div className="text-xs font-bold leading-tight">
                 App Store
@@ -90,7 +90,7 @@ export default function Hero() {
 
             <div className="text-left">
               <div className="text-[9px] font-medium uppercase tracking-wider text-gray-400">
-                Disponible sur
+                Disponible
               </div>
               <div className="text-xs font-bold leading-tight">
                 Google Play
