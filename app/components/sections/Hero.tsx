@@ -90,7 +90,7 @@ export default function Hero() {
 
             <div className="text-left">
               <div className="text-[9px] font-medium uppercase tracking-wider text-gray-400">
-                Disponible
+                Télécharger
               </div>
               <div className="text-xs font-bold leading-tight">
                 Google Play
@@ -124,16 +124,66 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Arche de fond avec dégradé d'accentuation */}
-          <div className="relative mx-auto flex justify-center">
-            <div className="h-44 w-80 rounded-t-full bg-gradient-to-b from-[#123B70] to-[#0A111E] sm:h-56 sm:w-[450px] shadow-2xl overflow-hidden relative border-t-4 border-[#F77500]">
+          {/* Arche de fond : Hub d'Activité & Statistiques */}
+          <div className="relative mx-auto flex justify-center pt-4">
+            <div className="h-60 w-80 rounded-t-full bg-gradient-to-b from-[#123B70] via-[#0D2447] to-[#0A111E] sm:h-72 sm:w-[520px] shadow-2xl overflow-hidden relative border-t-4 border-[#F77500] p-6 flex flex-col items-center justify-between">
               
-              {/* Effet d'illustration interne */}
-              <div className="absolute inset-0 bg-[radial-gradient(#F77500_1px,transparent_1px)] [background-size:16px_16px] opacity-20" />
-              
-              <div className="pt-6 text-center text-white/80 text-xs font-medium tracking-widest uppercase">
-                Application Mobile HOMEYA
+              {/* Motifs de fond (Maillage) */}
+              <div className="absolute inset-0 bg-[radial-gradient(#F77500_1px,transparent_1px)] [background-size:16px_16px] opacity-15" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-[#F77500]/10 rounded-full blur-3xl pointer-events-none" />
+
+              {/* Badge d'en-tête */}
+              <div className="relative z-10 text-center text-white/90 text-[10px] sm:text-xs font-bold tracking-widest uppercase flex items-center gap-2 bg-white/10 px-3 py-1 rounded-full backdrop-blur-md border border-white/10">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                Plateforme en direct
               </div>
+
+              {/* Cartes d'activité superposées à l'intérieur de l'arche */}
+              <div className="relative z-10 w-full max-w-md space-y-2.5 mt-2">
+                
+                {/* Mini Bar de Recherche Interactive (Factice mais visuelle) */}
+                <div className="bg-white/15 backdrop-blur-md border border-white/20 rounded-2xl p-2.5 flex items-center justify-between shadow-lg">
+                  <div className="flex items-center gap-2.5 text-left pl-1">
+                    <div className="w-2 h-2 rounded-full bg-[#F77500]" />
+                    <div>
+                      <p className="text-[10px] text-gray-300 font-medium leading-none">Recherche rapide</p>
+                      <p className="text-xs font-bold text-white mt-0.5">Appartement à Douala, Akwa</p>
+                    </div>
+                  </div>
+                  <span className="bg-[#F77500] hover:bg-[#e06a00] text-white text-[10px] font-bold px-3 py-1.5 rounded-xl transition-colors">
+                    Trouver
+                  </span>
+                </div>
+
+                {/* Grid de 2 cartes d'indicateurs clés */}
+                <div className="grid grid-cols-2 gap-2.5">
+                  
+                  {/* Carte 1 : Dernier bien ajouté */}
+                  <div className="bg-white/10 backdrop-blur-md border border-white/15 p-2.5 rounded-xl text-left transform hover:-translate-y-0.5 transition-transform">
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="text-[9px] font-semibold text-emerald-400 bg-emerald-500/20 px-1.5 py-0.5 rounded">
+                        Nouveau
+                      </span>
+                      <span className="text-[9px] text-gray-400">Il y a 5 min</span>
+                    </div>
+                    <p className="text-xs font-bold text-white truncate">Villa 4 pièces</p>
+                    <p className="text-[10px] text-gray-300">Yaoundé, Bastos</p>
+                  </div>
+
+                  {/* Carte 2 : Agents & Bailleurs certifiés */}
+                  <div className="bg-white/10 backdrop-blur-md border border-white/15 p-2.5 rounded-xl text-left transform hover:-translate-y-0.5 transition-transform">
+                    <p className="text-[10px] text-gray-300 font-medium">Bailleurs vérifiés</p>
+                    <p className="text-sm font-extrabold text-white mt-0.5">+150 Agents</p>
+                    <p className="text-[9px] text-amber-400 font-semibold mt-0.5">✓ Identités contrôlées</p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              {/* Bas de l'arche avec effet fondu */}
+              <div className="absolute bottom-0 inset-x-0 h-8 bg-gradient-to-t from-[#0A111E] to-transparent z-20 pointer-events-none" />
+
             </div>
           </div>
 
@@ -143,19 +193,34 @@ export default function Hero() {
 
       {/* Bandeau orange - Catégories Néo-Brutalistes */}
       <div className="relative z-30 w-full overflow-hidden bg-[#F77500] py-4 text-white shadow-lg">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center sm:justify-around gap-4 px-4 text-xs font-bold sm:text-sm">
-          {CATEGORIES.map((category) => (
-            <div
-              key={category}
-              className="flex items-center space-x-2 bg-white/10 px-3.5 py-1.5 rounded-full backdrop-blur-sm border border-white/20 transition-all hover:bg-white/20 cursor-pointer"
-            >
-              <ChevronRight
-                className="h-3.5 w-3.5 text-white"
-                aria-hidden="true"
-              />
-              <span>{category}</span>
-            </div>
-          ))}
+        {/* Conteneur de l'animation flex, gap important pour l'espace */}
+        <div className="flex animate-scroll gap-6 px-4">
+          {/* Premier groupe d'éléments (originaux) */}
+          <div className="flex flex-none items-center gap-6 text-xs font-bold sm:text-sm">
+            {CATEGORIES.map((category, index) => (
+              <div
+                key={`orig-${index}`}
+                className="flex flex-none items-center space-x-2 bg-white/10 px-3.5 py-1.5 rounded-full backdrop-blur-sm border border-white/20 transition-all hover:bg-white/20 cursor-pointer whitespace-nowrap"
+              >
+                <ChevronRight className="h-3.5 w-3.5 text-white" aria-hidden="true" />
+                <span>{category}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Deuxième groupe d'éléments (duplicata pour boucle infinie) */}
+          {/* aria-hidden="true" pour que les lecteurs d'écran ne lisent pas deux fois */}
+          <div className="flex flex-none items-center gap-6 text-xs font-bold sm:text-sm" aria-hidden="true">
+            {CATEGORIES.map((category, index) => (
+              <div
+                key={`dup-${index}`}
+                className="flex flex-none items-center space-x-2 bg-white/10 px-3.5 py-1.5 rounded-full backdrop-blur-sm border border-white/20 transition-all hover:bg-white/20 cursor-pointer whitespace-nowrap"
+              >
+                <ChevronRight className="h-3.5 w-3.5 text-white" aria-hidden="true" />
+                <span>{category}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -1,65 +1,57 @@
-// components/Footer.tsx
 'use client';
 
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowUp, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
-
   return (
-    <footer className="bg-[#0A2244] text-white pt-16 pb-8 relative overflow-hidden">
+    <footer className="bg-[#0A2244] text-white pt-16 pb-8 relative overflow-hidden text-footer-body">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Grille principale 4 colonnes */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
           
-          {/* Colonne 1 : Logo public & Description */}
-          <div className="space-y-4">
+          {/* Colonne 1 : Logo & Description */}
+          <div className="space-y-5">
             <Link href="/" className="inline-block">
               <Image
                 src="/logo-2.png"
                 alt="Homeya Logo"
-                width={140}
-                height={45}
-                className="h-10 w-auto object-contain"
+                width={160}
+                height={50}
+                className="h-12 w-auto object-contain"
                 priority
               />
             </Link>
 
-            <p className="text-xs text-gray-300 leading-relaxed max-w-sm">
+            <p className="text-gray-300 leading-relaxed max-w-sm">
               Homeya est la plateforme immobilière de référence au Cameroun. Trouvez, louez ou achetez vos biens en toute simplicité.
             </p>
 
-            <div className="space-y-2 pt-2 text-xs text-gray-300">
-              <div className="flex items-center space-x-2">
-                <MapPin className="w-4 h-4 text-[#F77500] flex-shrink-0" />
+            <div className="space-y-3 pt-2 text-gray-300">
+              <div className="flex items-center space-x-3">
+                <MapPin className="w-5 h-5 text-[#F77500] flex-shrink-0" />
                 <span>Bafoussam, Douala & Yaoundé, Cameroun</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <Phone className="w-4 h-4 text-[#F77500] flex-shrink-0" />
+              <div className="flex items-center space-x-3">
+                <Phone className="w-5 h-5 text-[#F77500] flex-shrink-0" />
                 <span>+237 699 128 531 / 698 204 806</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <Mail className="w-4 h-4 text-[#F77500] flex-shrink-0" />
+              <div className="flex items-center space-x-3">
+                <Mail className="w-5 h-5 text-[#F77500] flex-shrink-0" />
                 <span>contact@homeya.site</span>
               </div>
             </div>
           </div>
 
-          {/* Colonne 2 : Liens Légal */}
-          <div className="space-y-3">
-            <h4 className="text-sm font-bold text-white tracking-wider">
+          {/* Colonne 2 : Légal */}
+          <div className="space-y-4">
+            <h4 className="font-extrabold text-white tracking-wider text-footer-title">
               Légal
             </h4>
-            <ul className="space-y-2 text-xs text-gray-300">
+            <ul className="space-y-3 text-gray-300">
               <li>
                 <Link href="/cgu" className="hover:text-[#F77500] transition-colors">
                   Conditions Générales d&apos;Utilisation
@@ -84,11 +76,11 @@ export default function Footer() {
           </div>
 
           {/* Colonne 3 : Support */}
-          <div className="space-y-3">
-            <h4 className="text-sm font-bold text-white tracking-wider">
+          <div className="space-y-4">
+            <h4 className="font-extrabold text-white tracking-wider text-footer-title">
               Support
             </h4>
-            <ul className="space-y-2 text-xs text-gray-300">
+            <ul className="space-y-3 text-gray-300">
               <li>
                 <Link href="/#a-propos" className="hover:text-[#F77500] transition-colors">
                   À propos de nous
@@ -113,11 +105,11 @@ export default function Footer() {
           </div>
 
           {/* Colonne 4 : Suivez-nous */}
-          <div className="space-y-3">
-            <h4 className="text-sm font-bold text-white tracking-wider">
+          <div className="space-y-4">
+            <h4 className="font-extrabold text-white tracking-wider text-footer-title">
               Suivez-Nous
             </h4>
-            <p className="text-xs text-gray-300">
+            <p className="text-gray-300 leading-relaxed">
               Restez connecté avec nous sur les réseaux sociaux pour ne rien manquer des nouvelles offres.
             </p>
 
@@ -126,47 +118,37 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-lg bg-white/10 hover:bg-[#F77500] flex items-center justify-center text-white transition-all"
+                className="w-11 h-11 rounded-xl bg-white/10 hover:bg-[#F77500] flex items-center justify-center text-white transition-all shadow-md font-bold"
                 aria-label="Facebook"
               >
-                <span className="text-xs font-bold">fb</span>
+                fb
               </a>
               <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-lg bg-white/10 hover:bg-[#F77500] flex items-center justify-center text-white transition-all"
+                className="w-11 h-11 rounded-xl bg-white/10 hover:bg-[#F77500] flex items-center justify-center text-white transition-all shadow-md font-bold"
                 aria-label="Instagram"
               >
-                <span className="text-xs font-bold">ig</span>
+                ig
               </a>
               <a
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-lg bg-white/10 hover:bg-[#F77500] flex items-center justify-center text-white transition-all"
+                className="w-11 h-11 rounded-xl bg-white/10 hover:bg-[#F77500] flex items-center justify-center text-white transition-all shadow-md font-bold"
                 aria-label="LinkedIn"
               >
-                <span className="text-xs font-bold">in</span>
+                in
               </a>
             </div>
           </div>
 
         </div>
 
-        {/* Bas de page : Copyright + Bouton Scroll Top */}
-        <div className="pt-8 flex flex-col text-center sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
+        {/* Bas de page */}
+        <div className="pt-8 text-center sm:text-left text-gray-400 text-footer-sub">
           <p>© {new Date().getFullYear()} Homeya. Tous droits réservés.</p>
-
-          <button
-            onClick={scrollToTop}
-            className="inline-flex items-center space-x-2 text-xs font-semibold text-gray-300 hover:text-[#F77500] transition-colors"
-          >
-            <span>Haut de page</span>
-            <div className="p-1.5 rounded-full bg-white/10 hover:bg-[#F77500] text-white transition-all">
-              <ArrowUp className="w-3.5 h-3.5" />
-            </div>
-          </button>
         </div>
 
       </div>

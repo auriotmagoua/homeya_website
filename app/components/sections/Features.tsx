@@ -1,7 +1,7 @@
 // components/Features.tsx
 'use client';
 
-import React from 'react';
+import Image from 'next/image';
 import { Home, Key, Tag, Users } from 'lucide-react';
 
 export default function Features() {
@@ -74,58 +74,31 @@ export default function Features() {
             })}
           </div>
 
-          {/* Colonne Centrale : Mockup Smartphone */}
-          <div className="flex justify-center my-6 lg:my-0">
-            <div className="relative w-[260px] h-[520px] bg-black rounded-[45px] p-3 shadow-2xl border-4 border-gray-800">
-              {/* Encoche / Dynamic Island */}
-              <div className="absolute top-5 left-1/2 -translate-x-1/2 w-28 h-4 bg-black rounded-full z-20"></div>
-
-              {/* Écran du téléphone */}
-              <div className="w-full h-full bg-white rounded-[35px] overflow-hidden relative flex flex-col pt-8 px-4 border border-gray-100">
-                {/* Header de l'app mobile */}
-                <div className="flex justify-between items-center mb-4">
-                  <span className="text-xs font-black text-[#123B70]">
-                    HOME<span className="text-[#F77500]">YA</span>
-                  </span>
-                  <div className="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center text-[10px]">
-                    🔔
-                  </div>
+            {/* Colonne Centrale : Mockup Smartphone */}
+            <div className="flex justify-center my-6 lg:my-0">
+            <div className="relative w-[260px] h-[560px] bg-slate-950 rounded-[45px] p-2.5 shadow-2xl border-4 border-slate-800">
+                
+                {/* Encoche / Dynamic Island */}
+                <div className="absolute top-4 left-1/2 -translate-x-1/2 w-24 h-4 bg-black rounded-full z-20 flex items-center justify-end px-2 pointer-events-none">
+                <div className="w-2 h-2 rounded-full bg-slate-900" />
                 </div>
 
-                {/* Champ de recherche fictif */}
-                <div className="bg-gray-100 rounded-lg p-2 text-[10px] text-gray-400 mb-4 text-left">
-                  Rechercher une maison, appartement...
+                {/* Écran : bg-white au lieu de bg-slate-900 */}
+                <div className="relative w-full h-full rounded-[35px] overflow-hidden bg-white">
+                <Image
+                    src="/screen-1.jpeg"
+                    alt="Écran Application HOMEYA"
+                    fill
+                    priority // <-- Force le chargement instantané (pas de lazy loading)
+                    sizes="260px"
+                    className="object-cover object-bottom"
+                />
                 </div>
 
-                {/* Bannière de l'app */}
-                <div className="bg-[#123B70] text-white rounded-xl p-3 text-left mb-4">
-                  <div className="text-[10px] font-bold text-[#F77500]">Offre spéciale</div>
-                  <div className="text-xs font-semibold">Trouvez votre logement à Douala & Yaoundé</div>
-                </div>
-
-                {/* Liste de cartes immobilières fictives */}
-                <div className="flex-1 space-y-3 overflow-hidden">
-                  <div className="bg-gray-50 rounded-xl p-2 flex gap-2 border border-gray-100">
-                    <div className="w-14 h-14 bg-gray-300 rounded-lg flex-shrink-0"></div>
-                    <div className="text-left flex-1">
-                      <div className="w-20 h-2.5 bg-gray-300 rounded mb-1.5"></div>
-                      <div className="w-12 h-2 bg-gray-200 rounded mb-2"></div>
-                      <div className="w-16 h-2 bg-[#F77500]/60 rounded"></div>
-                    </div>
-                  </div>
-
-                  <div className="bg-gray-50 rounded-xl p-2 flex gap-2 border border-gray-100">
-                    <div className="w-14 h-14 bg-gray-300 rounded-lg flex-shrink-0"></div>
-                    <div className="text-left flex-1">
-                      <div className="w-24 h-2.5 bg-gray-300 rounded mb-1.5"></div>
-                      <div className="w-14 h-2 bg-gray-200 rounded mb-2"></div>
-                      <div className="w-16 h-2 bg-[#F77500]/60 rounded"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                {/* Barre d'accueil iOS */}
+                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-24 h-1 bg-slate-500/80 rounded-full z-20 pointer-events-none" />
             </div>
-          </div>
+            </div>
 
           {/* Colonne Droite : 2 cartes */}
           <div className="flex flex-col gap-6">

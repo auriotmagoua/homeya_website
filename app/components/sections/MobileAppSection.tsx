@@ -2,6 +2,8 @@
 "use client";
 
 import Link from "next/link";
+import Image from 'next/image';
+
 
 export default function MobileAppSection() {
   return (
@@ -70,106 +72,40 @@ export default function MobileAppSection() {
           </div>
 
           {/* =========================
-              SMARTPHONE
+              SMARTPHONE AVEC VRAIE IMAGE
           ========================== */}
           <div className="relative flex min-h-[360px] items-center justify-center md:min-h-[420px]">
 
-            {/* Forme orange arrière-plan */}
+            {/* Forme orange arrière-plan (Inchangé) */}
             <div className="absolute h-52 w-52 rotate-12 rounded-[2.5rem] bg-[#F77500] opacity-90 shadow-lg sm:h-60 sm:w-60 md:h-64 md:w-64" />
 
-            {/* Cercle décoratif */}
+            {/* Cercle décoratif (Inchangé) */}
             <div className="absolute h-72 w-72 rounded-full border border-white/10 sm:h-80 sm:w-80" />
 
-            {/* Smartphone */}
-            <div className="relative z-10 h-[350px] w-[180px] rounded-[38px] border-[5px] border-gray-200 bg-black p-1.5 shadow-2xl sm:h-[390px] sm:w-[200px]">
+            {/* Smartphone - Design Premium */}
+            <div className="relative z-10 h-[400px] w-[180px] rounded-[38px] border-[5px] border-gray-200 bg-slate-950 p-1.5 shadow-2xl sm:h-[390px] sm:w-[200px]">
               
-              {/* Encoche */}
-              <div className="absolute left-1/2 top-2 z-30 h-5 w-20 -translate-x-1/2 rounded-full bg-black" />
-
-              {/* Écran */}
-              <div className="h-full w-full overflow-hidden rounded-[30px] bg-gray-50">
-
-                {/* Header application */}
-                <div className="flex items-center justify-between bg-white px-4 pb-3 pt-8 shadow-sm">
-                  <div>
-                    <p className="text-[8px] text-gray-400">
-                      Bienvenue sur
-                    </p>
-                    <p className="text-sm font-extrabold text-[#123B70]">
-                      H<span className="text-[#F77500]">O</span>MEYA
-                    </p>
-                  </div>
-
-                  <div className="flex h-7 w-7 items-center justify-center rounded-full bg-[#123B70]">
-                    <span className="text-[9px] font-bold text-white">
-                      H
-                    </span>
-                  </div>
-                </div>
-
-                {/* Contenu écran */}
-                <div className="space-y-3 p-3">
-
-                  {/* Barre de recherche */}
-                  <div className="flex h-8 items-center rounded-lg bg-gray-100 px-3">
-                    <div className="mr-2 h-2.5 w-2.5 rounded-full border border-gray-400" />
-                    <div className="h-1.5 w-20 rounded-full bg-gray-300" />
-                  </div>
-
-                  {/* Titre */}
-                  <div>
-                    <div className="mb-1 h-2 w-20 rounded-full bg-[#123B70]" />
-                    <div className="h-1.5 w-28 rounded-full bg-gray-200" />
-                  </div>
-
-                  {/* Carte logement */}
-                  <div className="overflow-hidden rounded-xl bg-white shadow-sm">
-                    <div className="relative h-24 bg-gray-200">
-                      <div className="absolute right-2 top-2 flex h-6 w-6 items-center justify-center rounded-full bg-white/90">
-                        <span className="text-[10px] text-[#F77500]">♥</span>
-                      </div>
-
-                      {/* Image placeholder */}
-                      <div className="flex h-full items-center justify-center">
-                        <div className="h-10 w-12 rounded bg-gray-300" />
-                      </div>
-                    </div>
-
-                    <div className="space-y-1 p-2.5">
-                      <div className="h-2 w-24 rounded-full bg-[#123B70]" />
-                      <div className="h-1.5 w-16 rounded-full bg-gray-200" />
-
-                      <div className="flex items-center justify-between pt-1">
-                        <div className="h-2 w-12 rounded-full bg-[#F77500]" />
-                        <div className="h-1.5 w-8 rounded-full bg-gray-200" />
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Deux petites cartes */}
-                  <div className="grid grid-cols-2 gap-2">
-                    <div className="rounded-lg bg-white p-2 shadow-sm">
-                      <div className="mb-2 h-12 rounded-md bg-gray-200" />
-                      <div className="h-1.5 w-12 rounded-full bg-[#123B70]" />
-                      <div className="mt-1 h-1.5 w-8 rounded-full bg-gray-200" />
-                    </div>
-
-                    <div className="rounded-lg bg-white p-2 shadow-sm">
-                      <div className="mb-2 h-12 rounded-md bg-gray-200" />
-                      <div className="h-1.5 w-12 rounded-full bg-[#123B70]" />
-                      <div className="mt-1 h-1.5 w-8 rounded-full bg-gray-200" />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Bottom navigation */}
-                <div className="absolute bottom-2 left-2 right-2 flex h-10 items-center justify-around rounded-xl bg-white px-2 shadow-md">
-                  <div className="h-3 w-3 rounded-full bg-[#F77500]" />
-                  <div className="h-3 w-3 rounded-full bg-gray-300" />
-                  <div className="h-3 w-3 rounded-full bg-gray-300" />
-                  <div className="h-3 w-3 rounded-full bg-gray-300" />
-                </div>
+              {/* Encoche (Dynamic Island style) */}
+              <div className="absolute left-1/2 top-2 z-30 h-4 w-16 -translate-x-1/2 rounded-full bg-black flex items-center justify-end px-1.5 gap-0.5">
+                <div className="w-1 h-1 rounded-full bg-slate-800"/>
               </div>
+
+              {/* Écran (overflow-hidden pour contenir l'image) */}
+              <div className="relative h-full w-full overflow-hidden rounded-[30px] bg-white">
+                
+                {/* 1. AJOUT DE L'IMAGE RÉELLE */}
+                <Image
+                  src="/screen-2.jpeg" // <--- Remplacez par le chemin de votre vraie capture d'écran dans /public
+                  alt="Accueil de l'application Homeya"
+                  fill
+                  priority
+                  sizes="(max-width: 640px) 180px, 200px"
+                  className="object-cover object-top" // object-top pour bien voir le haut de l'app sous l'encoche
+                />
+              </div>
+
+              {/* Barre d'accueil inférieure (Bouton home iOS) */}
+              <div className="absolute bottom-1.5 left-1/2 -translate-x-1/2 w-16 h-1 bg-slate-500/60 rounded-full z-30 pointer-events-none" />
             </div>
           </div>
         </div>

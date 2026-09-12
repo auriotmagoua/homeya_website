@@ -1,12 +1,52 @@
 @import "tailwindcss";
 
-/* ── @reference permet d'utiliser @apply avec les utilitaires Tailwind v4 ── */
-@reference "tailwindcss";
+/* ── Configuration du thème (v4) ───────────────────────── */
+@theme {
+  /* Déclaration des familles de polices */
+  --font-baloo: var(--font-baloo), sans-serif;
+  --font-amazonas: var(--font-amazonas), cursive;
+  --font-nexa: var(--font-nexa), sans-serif;
 
-/* ── CSS Custom Properties ─────────────────────────────── */
+  /* Déclaration de l'animation de défilement */
+  --animate-scroll: scroll 10s linear infinite;
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* ── Custom Properties (Variables CSS) ─────────────────── */
 :root {
   --homeya-orange: #F77500;
   --homeya-blue: #123B70;
   --homeya-blue-dark: #0A2244;
   --homeya-bg-light: #F8FAFC;
 }
+
+/* ── Classes utilitaires personnalisées ────────────────── */
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+  /* ── Règles globales par balise HTML ───────────────────── */
+
+  /* Par défaut, tout le corps du site utilise Baloo 2 */
+  body {
+    font-family: var(--font-baloo);
+  }
+
+  /* Tous les titres (h1, h2, h3...) utiliseront la police Amazonas */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-baloo);
+  }
+
+  /* Tous les paragraphes utiliseront Nexa Light */
+  p {
+    font-family: var(--font-nexa);
+    font-size: 14px; 
+  }
