@@ -7,7 +7,7 @@ import Image from "next/image";
 import { Menu, X, Download } from "lucide-react";
 
 const NAV_LINKS = [
-  { label: "Accueil", href: "#accueil" },
+  { label: "Accueil", href: "/#accueil" },
   { label: "Fonctionnalités", href: "/#fonctionnalites" },
   { label: "À propos", href: "/#apropos" },
   { label: "Contacts", href: "/#contacts" },
