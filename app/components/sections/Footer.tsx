@@ -34,11 +34,11 @@ export default function Footer() {
               />
             </Link>
 
-            <p className="text-sm text-gray-300 leading-relaxed max-w-sm">
+            <p className="text-xs text-gray-300 leading-relaxed max-w-sm">
               Homeya est la plateforme immobilière de référence au Cameroun. Trouvez, louez ou achetez vos biens en toute simplicité.
             </p>
 
-            <div className="space-y-2 pt-2 text-xs text-gray-300">
+            <div className="space-y-2 pt-2 text-sm text-gray-300">
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4 text-[#F77500] flex-shrink-0" />
                 <span>Bafoussam, Douala & Yaoundé, Cameroun</span>
@@ -56,10 +56,10 @@ export default function Footer() {
 
           {/* Colonne 2 : Liens Légal */}
           <div className="space-y-3">
-            <h4 className="text-sm font-bold text-white tracking-wider">
+            <h4 className="text-lg font-bold text-white tracking-wider">
               Légal
             </h4>
-            <ul className="space-y-2 text-xs text-gray-300">
+            <ul className="space-y-2 text-sm text-gray-300">
               <li>
                 <Link href="/cgu" className="hover:text-[#F77500] transition-colors">
                   Conditions Générales d&apos;Utilisation
@@ -85,10 +85,10 @@ export default function Footer() {
 
           {/* Colonne 3 : Support */}
           <div className="space-y-3">
-            <h4 className="text-sm font-bold text-white tracking-wider">
+            <h4 className="text-lg font-bold text-white tracking-wider">
               Support
             </h4>
-            <ul className="space-y-2 text-xs text-gray-300">
+            <ul className="space-y-2 text-sm text-gray-300">
               <li>
                 <Link href="/#a-propos" className="hover:text-[#F77500] transition-colors">
                   À propos de nous
@@ -114,10 +114,10 @@ export default function Footer() {
 
           {/* Colonne 4 : Suivez-nous */}
           <div className="space-y-3">
-            <h4 className="text-sm font-bold text-white tracking-wider">
+            <h4 className="text-lg font-bold text-white tracking-wider">
               Suivez-Nous
             </h4>
-            <p className="text-xs text-gray-300">
+            <p className="text-sm text-gray-300">
               Restez connecté avec nous sur les réseaux sociaux pour ne rien manquer des nouvelles offres.
             </p>
 
@@ -155,7 +155,7 @@ export default function Footer() {
         </div>
 
         {/* Bas de page : Copyright + Bouton Scroll Top */}
-        <div className="pt-8 flex flex-col text-center sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
+        <div className="pt-8 flex flex-col text-center sm:flex-row items-center justify-between text-sm text-gray-400 gap-4">
           <p>© {new Date().getFullYear()} Homeya. Tous droits réservés.</p>
 
           {/* <button

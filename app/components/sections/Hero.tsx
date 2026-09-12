@@ -35,7 +35,7 @@ export default function Hero() {
         </div>
 
         {/* Titre Impactant */}
-        <h1 className="mb-6 text-3xl font-black tracking-tight text-[#123B70] sm:text-5xl md:text-6xl leading-[1.15]">
+        <h1 className="mb-1 text-3xl font-black tracking-tight text-[#123B70] sm:text-5xl md:text-6xl leading-[1.15]">
           Ton chez-toi,{" "}
           <span className="bg-gradient-to-r from-[#123B70] via-[#F77500] to-[#e06a00] bg-clip-text text-transparent">
             simplement.
