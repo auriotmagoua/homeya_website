@@ -185,7 +185,7 @@ export default function LegalNoticePage() {
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight">
-            Mentions <br />
+            Mentions {' '}
             <span className="bg-gradient-to-r from-white via-gray-200 to-[#F77500] bg-clip-text text-transparent">
               Légales
             </span>
