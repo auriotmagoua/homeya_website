@@ -48,7 +48,7 @@ const openWhatsapp = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="bg-[#2e4057] hover:bg-[#d45c3a] text-white p-3 rounded-full shadow-lg transition"
+          className="bg-[#F77500] hover:bg-[#d45c3a] text-white p-3 rounded-full shadow-lg transition"
         >
           <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
