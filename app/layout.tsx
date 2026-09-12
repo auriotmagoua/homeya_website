@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Homeya — Ton chez-toi, simplement.",
   description:"Trouvez rapidement des maisons, appartements, terrains, bureaux et magasins à louer ou à vendre directement depuis votre smartphone.",
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon.svg",
   },
 };
 // 1. Police Baloo 2 avec tous ses poids
