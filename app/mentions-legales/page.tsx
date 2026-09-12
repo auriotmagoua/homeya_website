@@ -31,40 +31,42 @@ export default function LegalNoticePage() {
       content: (
         <>
           <p className="mb-4">
-            Le site internet <strong>homeya.site</strong> et l&apos;application mobile <strong>HOMEYA</strong> sont co-fondés et édités par l&apos;équipe <strong>HOMEYA</strong> (Société en cours d&apos;immatriculation / HOMEYA SARL), opérant au Cameroun.
+            Le site internet <strong>homeya.site</strong> et l&apos;application mobile <strong>HOMEYA</strong> sont co-fondés et édités par l&apos;équipe <strong>HOMEYA</strong> Entreprise  opérant au Cameroun.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 my-4">
             <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-100 flex items-center space-x-3">
               <Building2 className="w-4 h-4 text-[#F77500] shrink-0" />
               <div>
-                <span className="block text-[11px] text-gray-400">Structure / Entité</span>
+                <span className="block text-[13px] text-gray-400">Structure / Entité</span>
                 <strong className="text-xs text-[#123B70]">HOMEYA SARL</strong>
               </div>
             </div>
             <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-100 flex items-center space-x-3">
               <MapPin className="w-4 h-4 text-[#F77500] shrink-0" />
               <div>
-                <span className="block text-[11px] text-gray-400">Siège Social</span>
-                <strong className="text-xs text-[#123B70]">Douala / Yaoundé, Cameroun</strong>
+                <span className="block text-[13px] text-gray-400">Siège Social</span>
+                <strong className="text-xs text-[#123B70]">Bafoussam / Douala / Yaoundé, Cameroun</strong>
               </div>
             </div>
             <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-100 flex items-center space-x-3">
               <Mail className="w-4 h-4 text-[#F77500] shrink-0" />
               <div>
-                <span className="block text-[11px] text-gray-400">E-mail Officiel</span>
+                <span className="block text-[13px] text-gray-400">E-mail Officiel</span>
                 <strong className="text-xs text-[#123B70]">contact@homeya.site</strong>
               </div>
             </div>
             <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-100 flex items-center space-x-3">
               <Phone className="w-4 h-4 text-[#F77500] shrink-0" />
               <div>
-                <span className="block text-[11px] text-gray-400">Téléphone / WhatsApp</span>
-                <strong className="text-xs text-[#123B70]">+237 6XX XX XX XX</strong>
+                <span className="block text-[13px] text-gray-400">Téléphone / WhatsApp</span>
+                <strong className="text-xs text-[#123B70]">+237 699 128 531</strong>
               </div>
             </div>
           </div>
-          <div className="bg-[#123B70]/5 p-4 rounded-2xl border border-[#123B70]/10 text-xs text-gray-600">
-            <strong>Inscriptions légales :</strong> RCCM : <em>RC/DLA/202X/B/XXX</em> | NIU : <em>MXXXXXXXXXXXXX</em> (Numéros mis à jour dès finalisation du registre de commerce).
+          <div className="bg-[#123B70]/5 p-4 rounded-2xl border border-[#123B70]/10 text-sm text-gray-600 flex items-center justify-between">
+            <div>
+              <strong className="text-[#123B70]">Conformité & Régulation : </strong> HOMEYA opère dans le strict respect de la réglementation sur l&apos;immobilier et le commerce électronique en République du Cameroun.
+            </div>
           </div>
         </>
       ),
@@ -137,7 +139,7 @@ export default function LegalNoticePage() {
       title: "6. Droit Applicable & Juridiction",
       content: (
         <p>
-          Les présentes mentions légales sont régies par la législation en vigueur en République du Cameroun. Tout litige relatif à l&apos;utilisation de la plateforme sera soumis à la juridiction des tribunaux compétents de Douala.
+          Les présentes mentions légales sont régies par la législation en vigueur en République du Cameroun. Tout litige relatif à l&apos;utilisation de la plateforme sera soumis à la juridiction des tribunaux.
         </p>
       ),
     },

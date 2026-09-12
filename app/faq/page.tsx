@@ -189,8 +189,10 @@ export default function FAQPage() {
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight">
-            Comment pouvons-nous <br />
-            <span className="text-[#F77500]">vous aider aujourd&apos;hui ?</span>
+            Comment pouvons-nous  <br />
+            <span className="bg-gradient-to-r from-white via-gray-200 to-[#F77500] bg-clip-text text-transparent">
+              vous aider aujourd&apos;hui ?
+            </span>
           </h1>
 
           <div className="mt-8 max-w-xl relative">
