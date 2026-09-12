@@ -42,7 +42,7 @@ export default function Navbar() {
                   className={
                     i === 0
                       ? "text-[#F77500] font-bold"
-                      : "transition-colors hover:text-[#F77500]"
+                      : "transition-colors  hover:text-[#F77500]"
                   }
                 >
                   {link.label}
