@@ -154,7 +154,7 @@ export default function About() {
               </div>
               <div>
                 <div className="text-2xl font-black text-[#123B70]">0 FCFA</div>
-                <div className="text-[11px] text-gray-500 font-medium">Frais masqués</div>
+                <div className="text-[11px] text-gray-500 font-medium">Frais cachés</div>
               </div>
             </div>
 
