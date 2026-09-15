@@ -3,7 +3,7 @@
 
 import Image from 'next/image';
 import { Home, Key, Tag, Users } from 'lucide-react';
-
+import { motion } from "framer-motion";
 export default function Features() {
   const leftFeatures = [
     {
@@ -75,30 +75,37 @@ export default function Features() {
           </div>
 
             {/* Colonne Centrale : Mockup Smartphone */}
-            <div className="flex justify-center my-6 lg:my-0">
-            <div className="relative w-[260px] h-[560px] bg-slate-950 rounded-[45px] p-2.5 shadow-2xl border-4 border-slate-800">
-                
-                {/* Encoche / Dynamic Island */}
-                <div className="absolute top-4 left-1/2 -translate-x-1/2 w-24 h-4 bg-black rounded-full z-20 flex items-center justify-end px-2 pointer-events-none">
-                <div className="w-2 h-2 rounded-full bg-slate-900" />
-                </div>
+            <motion.div  
+              animate={{ y: [0, -12, 0] }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }} 
+              className="flex justify-center my-6 lg:my-0">
+              <div className="relative w-[260px] h-[560px] bg-slate-950 rounded-[45px] p-2.5 shadow-2xl border-4 border-slate-800">
+                  
+                  {/* Encoche / Dynamic Island */}
+                  <div className="absolute top-4 left-1/2 -translate-x-1/2 w-24 h-4 bg-black rounded-full z-20 flex items-center justify-end px-2 pointer-events-none">
+                  <div className="w-2 h-2 rounded-full bg-slate-900" />
+                  </div>
 
-                {/* Écran : bg-white au lieu de bg-slate-900 */}
-                <div className="relative w-full h-full rounded-[35px] overflow-hidden bg-white">
-                <Image
-                    src="/screen-2.png"
-                    alt="Application HomeYa pour rechercher des logements au Cameroun"
-                    fill
-                    priority // <-- Force le chargement instantané (pas de lazy loading)
-                    sizes="260px"
-                    className="object-cover object-bottom"
-                />
-                </div>
+                  {/* Écran : bg-white au lieu de bg-slate-900 */}
+                  <div className="relative w-full h-full rounded-[35px] overflow-hidden bg-white">
+                    <Image
+                        src="/screen-2.png"
+                        alt="Application HomeYa pour rechercher des logements au Cameroun"
+                        fill
+                        priority // <-- Force le chargement instantané (pas de lazy loading)
+                        sizes="260px"
+                        className="object-cover object-bottom"
+                    />
+                  </div>
 
-                {/* Barre d'accueil iOS */}
-                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-24 h-1 bg-slate-500/80 rounded-full z-20 pointer-events-none" />
-            </div>
-            </div>
+                  {/* Barre d'accueil iOS */}
+                  <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-24 h-1 bg-slate-500/80 rounded-full z-20 pointer-events-none" />
+              </div>
+            </motion.div>
 
           {/* Colonne Droite : 2 cartes */}
           <div className="flex flex-col gap-6">
