@@ -9,12 +9,12 @@ export default function Features() {
     {
       icon: Home,
       title: 'Location de logements',
-      description: 'Trouvez facilement un appartement, une maison ou une chambre adapté à votre budget et à vos besoins.',
+      description: 'Trouvez facilement des maisons, appartements et logements meublés à louer selon votre budget et vos besoins.',
     },
     {
       icon: Tag,
       title: 'Vente de biens immobiliers',
-      description: 'Mettez votre bien en valeur et touchez des milliers d\'acheteurs potentiels rapidement.',
+      description: 'Publiez votre maison, appartement ou terrain et présentez votre bien à des acheteurs potentiels au Cameroun.',
     },
   ];
 
@@ -22,7 +22,7 @@ export default function Features() {
     {
       icon: Key,
       title: 'Achat de biens immobiliers',
-      description: 'Accédez à des offres de vente vérifiées et trouvez le bien idéal en toute sécurité.',
+      description: 'Découvrez des maisons, appartements et terrains à vendre au Cameroun à travers des annonces vérifiées.',
     },
     {
       icon: Users,
@@ -45,7 +45,7 @@ export default function Features() {
           Fonctionnalités
         </h2>
         <p className="text-gray-500 text-sm sm:text-base mb-16 max-w-xl mx-auto">
-          Une solution complète pour vos projets immobiliers.
+          Une solution complète pour vos projets immobiliers au cameroun.
         </p>
 
         {/* Disposition avec Téléphone au centre */}
@@ -86,8 +86,8 @@ export default function Features() {
                 {/* Écran : bg-white au lieu de bg-slate-900 */}
                 <div className="relative w-full h-full rounded-[35px] overflow-hidden bg-white">
                 <Image
-                    src="/screen-1.jpeg"
-                    alt="Écran Application HOMEYA"
+                    src="/screen-2.png"
+                    alt="Application HomeYa pour rechercher des logements au Cameroun"
                     fill
                     priority // <-- Force le chargement instantané (pas de lazy loading)
                     sizes="260px"

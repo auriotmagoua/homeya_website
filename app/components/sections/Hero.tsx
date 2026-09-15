@@ -44,8 +44,7 @@ export default function Hero() {
 
         {/* Description */}
         <p className="mx-auto mb-8 max-w-2xl text-xs sm:text-sm md:text-base leading-relaxed text-gray-600 font-normal">
-          Trouvez rapidement des maisons, appartements, terrains ou locaux
-          commerciaux à louer ou à vendre, directement depuis votre smartphone.
+          Trouvez rapidement des maisons et appartements meublés à louer au Cameroun, directement depuis votre smartphone.
         </p>
 
         {/* Boutons de téléchargement Premium */}

@@ -18,21 +18,21 @@ export default function About() {
   const tabContents = {
     mission: {
       badge: "Inclusion & Transparence",
-      title: "Digitaliser l'accès au logement sans intermédiaire",
-      description: "HOMEYA élimine les frictions et les frais cachés. Nous offrons une expérience fluide qui connecte directement les demandeurs aux propriétaires vérifiés partout au Cameroun.",
-      highlight: "100% Direct Propriétaire",
+      title: "Trouvez votre logement directement auprès de propriétaires vérifiés",
+      description: "HomeYa facilite la recherche de maisons et d’appartements à louer au Cameroun en vous mettant directement en relation avec des propriétaires vérifiés.",
+      highlight: "Recherche simple et directe",
     },
     securite: {
       badge: "Protection Maximale",
-      title: "Visites certifiées et transactions sécurisées",
-      description: "Chaque annonce publiée passe par un processus strict de vérification d'identité et de cadastre. Dites adieu aux arnaques et aux faux agents.",
-      highlight: "Certification Anti-Fraude",
+      title: "Des annonces immobilières vérifiées pour louer en toute confiance",
+      description: "Les informations des propriétaires et les annonces sont contrôlées afin de vous aider à éviter les fausses annonces et les arnaques immobilières.",
+      highlight: "Protection anti-fraude",
     },
     vision: {
       badge: "L'Avenir de l'Immobilier",
-      title: "Des visites en Réalité Virtuelle depuis votre salon",
-      description: "Explorez votre futur appartement à Douala ou Yaoundé avant même d'effectuer un déplacement. Économisez votre temps et vos ressources.",
-      highlight: "Immersion Haute Définition",
+      title: "Découvrez votre futur logement avant de vous déplacer",
+      description: "Explorez les logements disponibles à Douala, Yaoundé et ailleurs au Cameroun et préparez vos visites directement depuis votre smartphone.",
+      highlight: "Une recherche immobilière plus simple",
     },
   };
 
@@ -62,7 +62,7 @@ export default function About() {
           </h2>
 
           <p className="text-gray-600 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed">
-            HOMEYA fusionne technologie de pointe et sécurité absolue pour transformer la façon dont vous louez, achetez et investissez.
+            HomeYa simplifie la recherche de maisons et d’appartements à louer au Cameroun, avec des annonces vérifiées et des propriétaires identifiés.
           </p>
         </div>
 

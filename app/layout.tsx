@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ScrollToTop from "../app/components/ui/ScrollToTop";
 import localFont from 'next/font/local';
+import JsonLd from "../app/components/seo/JsonLd";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -162,8 +163,11 @@ export default function RootLayout({
       lang="fr"
       className={`${baloo2.variable} ${amazonas.variable} ${nexaLight.variable}`}
     >
-      <body className="font-baloo font-normal">{children}
-      <ScrollToTop/> 
+      <body className="font-baloo font-normal">
+      <JsonLd/>
+
+        {children}
+        <ScrollToTop/> 
       </body>
     </html>
   );

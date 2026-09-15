@@ -32,15 +32,15 @@ export default function MobileAppSection() {
             </div>
 
             <h2 className="text-2xl font-extrabold leading-tight tracking-tight sm:text-3xl md:text-4xl lg:text-[42px]">
-              Tout l&apos;immobilier
+              Tout l&apos;immobilier au cameroun
               <br className="hidden sm:block" />
               <span className="text-[#F77500]"> dans votre poche</span>
             </h2>
 
             <p className="mt-5 max-w-md text-sm leading-7 text-white/75 sm:text-base">
-              Avec Homeya, consultez des centaines d&apos;annonces,
-              découvrez les biens disponibles et trouvez votre prochain
-              chez-vous où que vous soyez.
+              Avec HomeYa, recherchez des maisons et appartements meublés à louer,
+              découvrez des annonces immobilières vérifiées et trouvez votre prochain
+              chez-vous au Cameroun.
             </p>
 
             {/* Points forts */}
@@ -49,14 +49,14 @@ export default function MobileAppSection() {
                 <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F77500] text-xs font-bold">
                   ✓
                 </span>
-                <span>Des annonces immobilières à portée de main</span>
+                <span>Des maisons et appartements meublés à louer</span>
               </div>
 
               <div className="flex items-center justify-center gap-3 md:justify-start">
                 <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F77500] text-xs font-bold">
                   ✓
                 </span>
-                <span>Recherchez facilement votre prochain logement</span>
+                <span>Des annonces vérifiées partout au Cameroun</span>
               </div>
             </div>
 
@@ -66,7 +66,7 @@ export default function MobileAppSection() {
                 href="#telecharger"
                 className="inline-flex items-center justify-center rounded-xl bg-[#F77500] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-black/10 transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#e06a00] hover:shadow-xl"
               >
-                Activer maintenant
+                Télécharger l&apos;application
               </Link>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function MobileAppSection() {
                 {/* 1. AJOUT DE L'IMAGE RÉELLE */}
                 <Image
                   src="/screen-2.jpeg" // <--- Remplacez par le chemin de votre vraie capture d'écran dans /public
-                  alt="Accueil de l'application Homeya"
+                  alt="Accueil de l'application HomeYa pour rechercher des logements au Cameroun"
                   fill
                   priority
                   sizes="(max-width: 640px) 180px, 200px"
