@@ -9,10 +9,90 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Homeya — Ton chez-toi, simplement.",
-  description:"Trouvez rapidement des maisons, appartements, terrains, bureaux et magasins à louer ou à vendre directement depuis votre smartphone.",
+  metadataBase: new URL("https://www.homeya.site"),
+
+  title: {
+    default: "HomeYa | Immobilier au Cameroun",
+    template: "%s | HomeYa",
+  },
+
+  description:
+    "HomeYa est la plateforme immobilière au Cameroun pour trouver des maisons, appartements, terrains, bureaux et magasins à louer ou à vendre.",
+
+  keywords: [
+    "HomeYa",
+    "HomeYa Cameroun",
+    "immobilier Cameroun",
+    "immobilier Douala",
+    "immobilier Yaoundé",
+    "maison à louer au Cameroun",
+    "appartement à louer au Cameroun",
+    "maison à vendre au Cameroun",
+    "appartement à vendre au Cameroun",
+    "terrain à vendre au Cameroun",
+    "location immobilière Cameroun",
+  ],
+
+  authors: [
+    {
+      name: "HomeYa",
+      url: "https://www.homeya.site",
+    },
+  ],
+
+  creator: "HomeYa",
+  publisher: "HomeYa",
+
+  applicationName: "HomeYa",
+
+  category: "real estate",
+
+  alternates: {
+    canonical: "https://www.homeya.site",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
   icons: {
     icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "fr_CM",
+    url: "https://www.homeya.site",
+    siteName: "HomeYa",
+    title: "HomeYa | Immobilier au Cameroun",
+    description:
+      "Trouvez des maisons, appartements, terrains, bureaux et magasins à louer ou à vendre au Cameroun avec HomeYa.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "HomeYa — Plateforme immobilière au Cameroun",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "HomeYa | Immobilier au Cameroun",
+    description:
+      "Trouvez des maisons, appartements, terrains, bureaux et magasins à louer ou à vendre au Cameroun.",
+    images: ["/og-image.jpg"],
   },
 };
 // 1. Police Baloo 2 avec tous ses poids
