@@ -95,7 +95,7 @@ export default function MobileAppSection() {
                 
                 {/* 1. AJOUT DE L'IMAGE RÉELLE */}
                 <Image
-                  src="/screen-2.jpeg" // <--- Remplacez par le chemin de votre vraie capture d'écran dans /public
+                  src="/screen-2.png" // <--- Remplacez par le chemin de votre vraie capture d'écran dans /public
                   alt="Accueil de l'application HomeYa pour rechercher des logements au Cameroun"
                   fill
                   priority

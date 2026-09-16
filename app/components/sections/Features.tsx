@@ -93,7 +93,7 @@ export default function Features() {
                   {/* Écran : bg-white au lieu de bg-slate-900 */}
                   <div className="relative w-full h-full rounded-[35px] overflow-hidden bg-white">
                     <Image
-                        src="/screen-2.png"
+                        src="/screen-1.png"
                         alt="Application HomeYa pour rechercher des logements au Cameroun"
                         fill
                         priority // <-- Force le chargement instantané (pas de lazy loading)
