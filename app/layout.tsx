@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.homeya.site"),
+  metadataBase: new URL("https://homeya.site"),
 
   title: {
     default: "HomeYa | Immobilier au Cameroun",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "HomeYa",
-      url: "https://www.homeya.site",
+      url: "https://homeya.site",
     },
   ],
 
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   category: "real estate",
 
   alternates: {
-    canonical: "https://www.homeya.site",
+    canonical: "https://homeya.site",
   },
 
   robots: {
@@ -73,14 +73,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_CM",
-    url: "https://www.homeya.site",
+    url: "https://homeya.site",
     siteName: "HomeYa",
     title: "HomeYa | Immobilier au Cameroun",
     description:
       "Trouvez des maisons, appartements, terrains, bureaux et magasins à louer ou à vendre au Cameroun avec HomeYa.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/favicon.svg",
         width: 1200,
         height: 630,
         alt: "HomeYa — Plateforme immobilière au Cameroun",
@@ -93,7 +93,7 @@ export const metadata: Metadata = {
     title: "HomeYa | Immobilier au Cameroun",
     description:
       "Trouvez des maisons, appartements, terrains, bureaux et magasins à louer ou à vendre au Cameroun.",
-    images: ["/og-image.jpg"],
+    images: ["/favicon.svg"],
   },
 };
 // 1. Police Baloo 2 avec tous ses poids
@@ -164,8 +164,7 @@ export default function RootLayout({
       className={`${baloo2.variable} ${amazonas.variable} ${nexaLight.variable}`}
     >
       <body className="font-baloo font-normal">
-      <JsonLd/>
-
+        <JsonLd/>
         {children}
         <ScrollToTop/> 
       </body>

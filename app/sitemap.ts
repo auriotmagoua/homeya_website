@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.homeya.site";
+  const baseUrl = "https://homeya.site";
 
   return [
     {
