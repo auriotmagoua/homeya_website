@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.homeya.site/sitemap.xml",
+    sitemap: "https://homeya.site/sitemap.xml",
   };
 }
