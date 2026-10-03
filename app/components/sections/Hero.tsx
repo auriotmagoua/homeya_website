@@ -75,7 +75,7 @@ export default function Hero() {
 
           {/* Google Play */}
           <a
-            href="#telecharger"
+            href="/Homeya.apk"
             aria-label="Télécharger HomeYa sur Google Play"
             className="group flex items-center space-x-3 rounded-2xl bg-[#0A111E] px-6 py-3 text-white shadow-lg shadow-gray-900/10 transition-all duration-300 hover:bg-[#123B70] hover:-translate-y-0.5 border border-white/10"
           >
